@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<div id="app" class="container-fluid">
+		<h3 class="page-title" id="page-title">课程实战</h3>
+
+		<div id="courseContent">
+			<p class="alert2 alert-warning" style="width: 95%" id="inputDescription">欢迎来到课程训练营！<br>
+				界面说明：左边是课程列表、中间是代码编辑区、右边是课程内容区。<br>
+				课程列表：显示老师给我们的课程题目列表<br>
+				代码编辑区：提供给我们写代码的区域<br>
+				课程内容区：显示我们的课程题目内容<br>
+			</p>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-sm-6">
+
+						<button class="btn btn-sm btn-primary" onclick="openPrev()">上一题</button>
+						<button class="btn btn-sm btn-danger" onclick="openNext()">下一题</button>
+
+						<button id='submitButton' class="btn btn-sm btn-success" style="margin-left:20px;width: 60px"
+						onclick="openCheckClick()">提交</button> <!--margin-left:20px;-->
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{
+	"name": "test",
+	"displayName": "test",
+	"description": "test",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+            "command": "extension.helloWorld",
+			"title": "Hello World"
+		}],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "test_id",
+					"title": "测试",
+					"icon": "images/todo-tree-container1.svg"
+				}
+			]
+		},
+		"views": {
+			"test_id": [
+				{
+					"id": "test_ID",
+					"name": "测试列表"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
